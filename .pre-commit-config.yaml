@@ -1,0 +1,36 @@
+default_language_version:
+  python: python3.10
+default_stages: [commit, push]
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+      - id: trailing-whitespace
+      - id: check-ast
+      - id: check-merge-conflict
+      - id: check-yaml
+  - repo: https://github.com/psf/black
+    rev: 21.12b0
+    hooks:
+    -   id: black
+  - repo: https://github.com/Lucas-C/pre-commit-hooks-bandit
+    rev: v1.0.5
+    hooks:
+    -   id: python-bandit-vulnerability-check
+  - repo: https://github.com/pycqa/isort
+    rev: 5.10.1
+    hooks:
+      - id: isort
+        name: isort (python)
+  - repo: https://github.com/Lucas-C/pre-commit-hooks-safety
+    rev: v1.2.4
+    hooks:
+    -   id: python-safety-dependencies-check
+  - repo: local
+    hooks:
+    - id: pylint
+      name: pylint
+      entry: pylint
+      language: system
+      types: [python]
