@@ -27,7 +27,7 @@ class Table:
 
     def __init__(self, table_dict) -> None:
         self.rolls = table_dict.pop("rolls")  # pop to get remaining characteristics
-        self.characterisitcs = table_dict  # popped dict only containing characteristics
+        self.characteristics = table_dict  # popped dict only containing characteristics
 
     def specified_roll(self, table_name):
         """

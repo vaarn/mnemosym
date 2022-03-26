@@ -49,9 +49,9 @@
             "issue": 3
         },
         {
-            "name": "Planey Folk",
-            "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/characters/faaNomad.json",
-            "filepath": "data/ancestries-faaNomad.json",
+            "name": "Planeyfolk",
+            "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/characters/planeyfolk.json",
+            "filepath": "data/ancestries-planeyfolk.json",
             "issue": 3
         }
     ],
