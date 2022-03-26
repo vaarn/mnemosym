@@ -78,7 +78,7 @@
             "Type": {
                 "Desert Robes (1 slot, Armour 11)":2,
                 "Hazard Wrap (2 slots, Armour 12) Immunity from Radiation & Toxins":2,
-                "War Shirt (2 slots, Armour 12":4,
+                "War Shirt (2 slots, Armour 12)":4,
                 "Brigandine (3 slots, Armour 13)":5,
                 "Curiass (4 slots, Armour 14)":3,
                 "Chain-mail (5 slots, Armour 15)":2,
@@ -128,6 +128,28 @@
             "Thermal Goggles":1,
             "Fungicide Bomb":1,
             "Canary in Cage":1
+        },
+        "Exotica": {
+            "Mirror Ring: Projects a hologram copy of the wearer that mimics their actions.":1,
+            "A Fool’s Head: The severed head of a synthetic jester. Not in great condition but can still remember some jokes.":1,
+            "Singing Crystal: When struck, sings loudly and beautifully for up to an hour.":1,
+            "Nightmare Box: Small cube of unbreakable, dark-tinted glass. One small peephole. Anyone looks inside will be paralysed by horror.":1,
+            "Sandworm Horn: Blow outdoors to summon a sandworm, if you are bold enough.":1,
+            "Midas Bomb: Transforms organic matter into gold.":1,
+            "Sky-seeking Salve: Reverses effect of gravity on object it coats. Take care when outdoors":1,
+            "Chameleon Cloak: Perfectly matches the colour of its surroundings":1,
+            "Desiccated Mycomorph: Tiny dried out fungus-man. A drop of blood will revive him.":1,
+            "Flesh of the Honeyed Lamb: Stolen from the Cult of the Honeyed Lamb; meat imbued with a powerful medicinal psychedelic.":1,
+            "Agoniser: A barbaric relic. Silver needle that causes unbearable pain to organic creatures without leaving a mark.":1,
+            "Exultant’s Hawk: Cybernetic hunting animal, bound to you telepathically. 3 HP, Armour 17, d4 claw damage.":1,
+            "Black Heart: Repulsive twitching cyborg organ. Will slowly and painfully revive a single dead body.":1,
+            "All-Purpose Idol: Imbued with powerful neuro-active programming. Observers always believe idol represents the deity they worship.":1,
+            "Ulfire Candle: Ulfire is the ninth colour; its light has the unusual quality of shining through solid objects. It is blocked by lead.":1,
+            "Vial of ICE-9: Alchemical substance that transforms all water it touches into un-meltable ice.":1,
+            "Pale Blade of Amun-Oh: Priests of Amun-Oh pledged never to take a life; their white knives will cut through anything except living flesh.":1,
+            "Blasphemies of the Binary Demon: A tablet engraved with a series of quantum-logical propositions. Poses little threat to organic life, but can be deadly to sentient machines.":1,
+            "Helpful Snake: It lives up your sleeve and tries, whenever it can, to help.":1,
+            "Dried Crypt Lotus: Grim flower that sprouts from the forehead of corpses. Sometimes kept as a keepsake of a lost companion.":1
         }
     }
 }
