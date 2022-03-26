@@ -130,3 +130,6 @@ dmypy.json
 
 # environment files
 .env
+
+# data
+data/*.json
