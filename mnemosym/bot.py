@@ -3,23 +3,16 @@ mnemosym.bot
 ~~~~~~~~~~~~
 Discord event handling
 """
-import json
-import os
-from pathlib import Path
-from random import choice
+from typing import Optional
 
 from discord.ext import commands
-from dotenv import load_dotenv
 
-from mnemosym.chargen import generate_character
-from mnemosym.table_manger import TableManager
-
-load_dotenv()
-TOKEN = os.getenv("DISCORD_TOKEN")
-DATA_DIR = Path(os.getenv("DATA_DIR"))
-
-print("Initalizing Table Manager")
-tm = TableManager(DATA_DIR)
+from mnemosym.config import TOKEN
+from mnemosym.generators import (
+    generate_ancestry_features,
+    generate_hp,
+    generate_stat_block,
+)
 
 bot = commands.Bot(command_prefix="!")
 
@@ -33,14 +26,26 @@ async def on_ready():
 @bot.command(name="chargen", help="generates a random character")
 async def build_random_character(ctx):
     """builds a random character"""
-    await ctx.send(generate_character())
+    # await ctx.send(generate_character())
+    raise NotImplementedError
 
 
 @bot.command(name="ancestry", help="Generate a random Ancestry")
 async def build_random_ancestry(ctx):
     """builds a random ancestry"""
-    target_ancestry = choice(list(tm.tables["ancestries"].keys()))
-    await ctx.send(json.dumps((tm.tables["ancestries"][target_ancestry].roll_table())))
+    await ctx.send(generate_ancestry_features())
+
+
+@bot.command(name="stats", help="Generate a stat array.")
+async def build_stats(ctx):
+    """build a statblock"""
+    await ctx.send(generate_stat_block())
+
+
+@bot.command(name="hp", help="Generate hp (1d8), can be fudged with !hp fudge.")
+async def build_hp(ctx, fudge: Optional[str]):
+    """builds hp, can be fudged"""
+    await ctx.send(generate_hp(fudge == "fudge"))
 
 
 bot.run(TOKEN)
