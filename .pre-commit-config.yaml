@@ -18,6 +18,7 @@ repos:
     rev: v1.0.5
     hooks:
     -   id: python-bandit-vulnerability-check
+        args: [--skip B311]
   - repo: https://github.com/pycqa/isort
     rev: 5.10.1
     hooks:
