@@ -1,100 +1,96 @@
-[
-    {
-        "ancestries": [
-            {
-                "name": "True-Kin",
-                "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/characters/true-kin.json",
-                "filepath": "data/ancestries-true-kin.json",
-                "issue": 1
-            },
-            {
-                "name": "Cacogen",
-                "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/characters/cacogen.json",
-                "filepath": "data/ancestries-cacogen.json",
-                "issue": 1
-            },
-            {
-                "name": "Synth",
-                "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/characters/synths.json",
-                "filepath": "data/ancestries-synth.json",
-                "issue": 1
-            },
-            {
-                "name": "Newbeast",
-                "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/characters/newbeast.json",
-                "filepath": "data/ancestries-newbeast.json",
-                "issue": 1
-            },
-            {
-                "name": "Mycomorph",
-                "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/characters/mycomorph.json",
-                "filepath": "data/ancestries-mycomorph.json",
-                "issue": 1
-            },
-            {
-                "name": "Faa Nomad",
-                "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/characters/faaNomad.json",
-                "filepath": "data/ancestries-faaNomad.json",
-                "issue": 3
-            },
-            {
-                "name": "Cacklemaw Exile",
-                "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/characters/cacklemaw.json",
-                "filepath": "data/ancestries-cacklemaw.json",
-                "issue": 3
-            },
-            {
-                "name": "Lithling",
-                "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/characters/lithling.json",
-                "filepath": "data/ancestries-lithling.json",
-                "issue": 3
-            },
-            {
-                "name": "Planey Folk",
-                "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/characters/faaNomad.json",
-                "filepath": "data/ancestries-faaNomad.json",
-                "issue": 3
-            }
-        ]
-    },
-    {
-        "equipment": [
-            {
-                "name": "Weapons",
-                "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/equipment/weapons.json",
-                "filepath": "data/equipment-weapons.json",
-                "issue": 1
-            },
-            {
-                "name": "Armour",
-                "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/equipment/armour.json",
-                "filepath": "data/equipment-armour.json",
-                "issue": 1
-            },
-            {
-                "name": "Gear",
-                "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/equipment/gear.json",
-                "filepath": "data/equipment-gear.json",
-                "issue": 1
-            },
-            {
-                "name": "Mystic Gifts",
-                "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/equipment/mysticGifts.json",
-                "filepath": "data/equipment-gifts.json",
-                "issue": 1
-            },
-            {
-                "name": "Cybernetics",
-                "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/equipment/cybernetics.json",
-                "filepath": "data/equipment-cybernetics.json",
-                "issue": 1
-            },
-            {
-                "name": "Exotica",
-                "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/equipment/exotica.json",
-                "filepath": "data/equipment-exotica.json",
-                "issue": 1
-            },
-        ]
-    }
-]
+{
+    "ancestries": [
+        {
+            "name": "True-Kin",
+            "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/characters/true-kin.json",
+            "filepath": "data/ancestries-true-kin.json",
+            "issue": 1
+        },
+        {
+            "name": "Cacogen",
+            "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/characters/cacogen.json",
+            "filepath": "data/ancestries-cacogen.json",
+            "issue": 1
+        },
+        {
+            "name": "Synth",
+            "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/characters/synths.json",
+            "filepath": "data/ancestries-synth.json",
+            "issue": 1
+        },
+        {
+            "name": "Newbeast",
+            "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/characters/newbeast.json",
+            "filepath": "data/ancestries-newbeast.json",
+            "issue": 1
+        },
+        {
+            "name": "Mycomorph",
+            "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/characters/mycomorph.json",
+            "filepath": "data/ancestries-mycomorph.json",
+            "issue": 1
+        },
+        {
+            "name": "Faa Nomad",
+            "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/characters/faaNomad.json",
+            "filepath": "data/ancestries-faaNomad.json",
+            "issue": 3
+        },
+        {
+            "name": "Cacklemaw Exile",
+            "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/characters/cacklemaw.json",
+            "filepath": "data/ancestries-cacklemaw.json",
+            "issue": 3
+        },
+        {
+            "name": "Lithling",
+            "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/characters/lithling.json",
+            "filepath": "data/ancestries-lithling.json",
+            "issue": 3
+        },
+        {
+            "name": "Planey Folk",
+            "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/characters/faaNomad.json",
+            "filepath": "data/ancestries-faaNomad.json",
+            "issue": 3
+        }
+    ],
+    "equipment": [
+        {
+            "name": "Weapons",
+            "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/equipment/weapons.json",
+            "filepath": "data/equipment-weapons.json",
+            "issue": 1
+        },
+        {
+            "name": "Armour",
+            "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/equipment/armour.json",
+            "filepath": "data/equipment-armour.json",
+            "issue": 1
+        },
+        {
+            "name": "Gear",
+            "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/equipment/gear.json",
+            "filepath": "data/equipment-gear.json",
+            "issue": 1
+        },
+        {
+            "name": "Mystic Gifts",
+            "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/equipment/mysticGifts.json",
+            "filepath": "data/equipment-gifts.json",
+            "issue": 1
+        },
+        {
+            "name": "Cybernetics",
+            "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/equipment/cybernetics.json",
+            "filepath": "data/equipment-cybernetics.json",
+            "issue": 1
+        },
+        {
+            "name": "Exotica",
+            "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/equipment/exotica.json",
+            "filepath": "data/equipment-exotica.json",
+            "issue": 1
+        }
+    ]
+}
