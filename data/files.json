@@ -64,7 +64,7 @@
         },
         {
             "name": "Armour",
-            "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/equipment/armour.json",
+            "url": "https://raw.githubusercontent.com/omniczech/vaarn-generators/main/data/equipment/armor.json",
             "filepath": "data/equipment-armour.json",
             "issue": 1
         },
