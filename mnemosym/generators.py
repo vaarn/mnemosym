@@ -59,3 +59,9 @@ def generate_ancestry_features(ancestry=None) -> dict:
         + "\n\n"
         + "\n".join(f"**{k}:** {v}" for k, v in ancestry_rolls.items())
     )
+
+
+def generate_weapon():
+    """generates a weapon"""
+    weapon_table = tm.tables["equipment"]["Weapons"]
+    return f"**Weapon:** {weapon_table.joined_roll(['aspect', 'Form', 'damage'])}"

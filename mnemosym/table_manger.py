@@ -34,7 +34,10 @@ class Table:
         rolls a specific named subtable.
         N.b. this will not work if rolls have duplicate name values.
         """
-        table_options = list(filter(lambda x: x["name"] == table_name, self.rolls))[0]
+        table_options = list(filter(lambda x: x["name"] in [table_name], self.rolls))[
+            0
+        ]["options"]
+
         return choice(table_options)  # nosec
 
     def roll_table(self) -> dict:
@@ -53,7 +56,7 @@ class EquipmentTable(Table):
 
     def cybernetics_roll(self):
         """edge case handling for the cybernetics formatting"""
-        return " ".join(choice(self.rolls[0]))
+        return " - ".join(choice(self.rolls[0]))
 
 
 class TableManager:  # pylint: disable=too-few-public-methods

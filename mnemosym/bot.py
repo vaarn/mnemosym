@@ -12,6 +12,7 @@ from mnemosym.generators import (
     generate_ancestry_features,
     generate_hp,
     generate_stat_block,
+    generate_weapon,
 )
 
 bot = commands.Bot(command_prefix="!")
@@ -46,6 +47,12 @@ async def build_stats(ctx):
 async def build_hp(ctx, fudge: Optional[str]):
     """builds hp, can be fudged"""
     await ctx.send(generate_hp(fudge == "fudge"))
+
+
+@bot.command(name="weapon", help="Generates a weapon.")
+async def build_weapon(ctx):
+    """build a weapon string"""
+    await ctx.send(generate_weapon())
 
 
 bot.run(TOKEN)
