@@ -13,6 +13,7 @@ from mnemosym.generators import (
     generate_hp,
     generate_stat_block,
     generate_weapon,
+    list_ancestry,
 )
 
 bot = commands.Bot(command_prefix="!")
@@ -32,9 +33,11 @@ async def build_random_character(ctx):
 
 
 @bot.command(name="ancestry", help="Generate a random Ancestry")
-async def build_random_ancestry(ctx):
+async def build_random_ancestry(ctx, ancestry: Optional[str]):
     """builds a random ancestry"""
-    await ctx.send(generate_ancestry_features())
+    if ancestry == "list":
+        await ctx.send(list_ancestry())
+    await ctx.send(generate_ancestry_features(ancestry))
 
 
 @bot.command(name="stats", help="Generate a stat array.")

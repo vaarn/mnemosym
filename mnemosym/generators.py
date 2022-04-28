@@ -41,6 +41,11 @@ def generate_hp(fudge=False) -> str:
     return f"**HP:** {hitpoints}"
 
 
+def list_ancestry() -> str:
+    """lists available ancestries."""
+    return "Available ancestries:\n" + "\n".join(list(tm.tables["ancestries"].keys()))
+
+
 def generate_ancestry_features(ancestry=None) -> dict:
     """generates a dict of random and static ancestry features from a table dict"""
     if ancestry is None:
