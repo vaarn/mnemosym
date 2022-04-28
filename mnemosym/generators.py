@@ -70,3 +70,9 @@ def generate_weapon():
     """generates a weapon"""
     weapon_table = tm.tables["equipment"]["Weapons"]
     return f"**Weapon:** {weapon_table.joined_roll(['aspect', 'Form', 'damage'])}"
+
+
+def generate_armour():
+    """generates armour"""
+    armour_table = tm.tables["equipment"]["Armour"]
+    return f"**Armour:** {armour_table.joined_roll(['quality', 'type'])}"

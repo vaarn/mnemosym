@@ -10,6 +10,7 @@ from discord.ext import commands
 from mnemosym.config import TOKEN
 from mnemosym.generators import (
     generate_ancestry_features,
+    generate_armour,
     generate_hp,
     generate_stat_block,
     generate_weapon,
@@ -56,6 +57,12 @@ async def build_hp(ctx, fudge: Optional[str]):
 async def build_weapon(ctx):
     """build a weapon string"""
     await ctx.send(generate_weapon())
+
+
+@bot.command(name="armour", help="Generates armour.")
+async def build_armour(ctx):
+    """build armour"""
+    await ctx.send(generate_armour())
 
 
 bot.run(TOKEN)
