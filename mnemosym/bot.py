@@ -12,9 +12,11 @@ from mnemosym.generators import (
     generate_ancestry_features,
     generate_armour,
     generate_cybernetic,
+    generate_exotica,
     generate_gear,
     generate_gift,
     generate_hp,
+    generate_random_character,
     generate_stat_block,
     generate_weapon,
     list_ancestry,
@@ -32,13 +34,12 @@ async def on_ready():
 @bot.command(name="chargen", help="generates a random character")
 async def build_random_character(ctx):
     """builds a random character"""
-    # await ctx.send(generate_character())
-    raise NotImplementedError
+    await ctx.send(generate_random_character())
 
 
 @bot.command(
     name="ancestry",
-    help=(
+    help=str(
         "Generate a random Ancestry, "
         + "or generate a speciifc one with !ancestry <ancestry> "
         + "(you can find a list of supported ancestries with !ancestry list",
@@ -91,6 +92,12 @@ async def build_gift(ctx):
 async def build_cybernetic(ctx):
     """builds gift"""
     await ctx.send(generate_cybernetic())
+
+
+@bot.command(name="exotica", help="Generates exotica")
+async def build_exotica(ctx):
+    """builds exotica"""
+    await ctx.send(generate_exotica())
 
 
 bot.run(TOKEN)

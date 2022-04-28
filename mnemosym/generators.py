@@ -51,7 +51,7 @@ def list_ancestry() -> str:
     return "Available ancestries:\n" + "\n".join(list(tm.tables["ancestries"].keys()))
 
 
-def generate_ancestry_features(ancestry=None) -> dict:
+def generate_ancestry_features(ancestry=None, short: bool = False) -> dict:
     """generates a dict of random and static ancestry features from a table dict"""
     if ancestry is None:
         target_ancestry = choice(list(tm.tables["ancestries"].keys()))
@@ -60,10 +60,17 @@ def generate_ancestry_features(ancestry=None) -> dict:
     target_table = tm.tables["ancestries"][target_ancestry]
     ancestry_rolls = target_table.roll_table()
     ancestry_characteristics = target_table.characteristics
-
+    if short is False:
+        return (
+            f"**Ancestry:** {target_ancestry}\n"
+            + f"> {ancestry_characteristics['description']}\n\n"
+            + "**Special(s):**\n"
+            + "    \n".join(ancestry_characteristics["special"])
+            + "\n\n"
+            + "\n".join(f"**{k}:** {v}" for k, v in ancestry_rolls.items())
+        )
     return (
         f"**Ancestry:** {target_ancestry}\n"
-        + f"> {ancestry_characteristics['description']}\n\n"
         + "**Special(s):**\n"
         + "    \n".join(ancestry_characteristics["special"])
         + "\n\n"
@@ -97,7 +104,7 @@ def generate_gift():
     gift_table = tm.tables["equipment"]["Mystic Gifts"]
     return (
         f"**Source of Power:** {gift_table.specified_roll('Source of Power')}"
-        + "\n**Your Gift:** {gift_table.specified_roll('Your Gift')}"
+        + f"\n**Your Gift:** {gift_table.specified_roll('Your Gift')}"
     )
 
 
@@ -106,3 +113,26 @@ def generate_cybernetic():
     cybernetic_table = tm.tables["equipment"]["Cybernetics"]
     result_list = cybernetic_table.specified_roll("cyber")
     return f"**{result_list[0]} ({result_list[1]})** {' '.join(result_list[2:])}"
+
+
+def generate_exotica():
+    """generates exotica"""
+    exotica_table = tm.tables["equipment"]["Exotica"]
+    return f"**Exotica:** {exotica_table.specified_roll('cyber')}"
+
+
+def generate_random_character():
+    """generates a random character."""
+    return (
+        f"{generate_stat_block()}\n"
+        + f"{generate_hp()} (Don't forget to add your constitution bonus)\n"
+        + "\n"
+        + f"{generate_ancestry_features(short=True)}\n"
+        + "\n"
+        + f"{generate_gear()}\n"
+        + f"{generate_weapon()}\n"
+        + f"{generate_armour()}\n"
+        + "\n"
+        + f"{generate_gift()}\n"
+        + f"{generate_exotica()}"
+    )
