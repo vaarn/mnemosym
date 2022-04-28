@@ -1,5 +1,10 @@
 """
-mnemosym.chargen
+mnemosym.generators
+~~~~~~~~~~~~~~~~~~~
+contains functions for rolling on tables provided by the table manager.
+
+TODO: there is a lot of duplicated code here that could be refactored into one or two
+different functions that take specific table and subtables.
 """
 from random import choice, randint
 
@@ -76,3 +81,28 @@ def generate_armour():
     """generates armour"""
     armour_table = tm.tables["equipment"]["Armour"]
     return f"**Armour:** {armour_table.joined_roll(['quality', 'type'])}"
+
+
+def generate_gear():
+    """generates starting gear without weapon or armour"""
+    gear_table = tm.tables["equipment"]["Gear"]
+    return (
+        "**Starting Gear:** 3 Days Rations, "
+        + f"{gear_table.joined_roll(['Gear 1', 'Gear 2'], ' & ')}."
+    )
+
+
+def generate_gift():
+    """generates a gift"""
+    gift_table = tm.tables["equipment"]["Mystic Gifts"]
+    return (
+        f"**Source of Power:** {gift_table.specified_roll('Source of Power')}"
+        + "\n**Your Gift:** {gift_table.specified_roll('Your Gift')}"
+    )
+
+
+def generate_cybernetic():
+    """generates a cybernetic"""
+    cybernetic_table = tm.tables["equipment"]["Cybernetics"]
+    result_list = cybernetic_table.specified_roll("cyber")
+    return f"**{result_list[0]} ({result_list[1]})** {' '.join(result_list[2:])}"

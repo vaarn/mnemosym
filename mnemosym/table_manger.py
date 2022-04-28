@@ -13,7 +13,7 @@ import json
 from collections import defaultdict
 from pathlib import Path
 from random import choice
-from typing import List
+from typing import List, Optional
 
 # useful dict that defaults to values being empty dictionaries
 dictdict = defaultdict(dict)
@@ -50,9 +50,9 @@ class Table:
 class EquipmentTable(Table):
     """modified table that builds weapons and armour in addition to rolling gear"""
 
-    def joined_roll(self, sub_tables: List[str]):
+    def joined_roll(self, sub_tables: List[str], join_str: Optional[str] = " "):
         """returns a string of the rolled subtables joined with spaces"""
-        return " ".join([self.specified_roll(i) for i in sub_tables])
+        return join_str.join([self.specified_roll(i) for i in sub_tables])
 
     def cybernetics_roll(self):
         """edge case handling for the cybernetics formatting"""
