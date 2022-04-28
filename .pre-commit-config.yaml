@@ -18,11 +18,13 @@ repos:
     rev: v1.0.5
     hooks:
     -   id: python-bandit-vulnerability-check
+        args: ["--skip B311"]
   - repo: https://github.com/pycqa/isort
     rev: 5.10.1
     hooks:
       - id: isort
         name: isort (python)
+        args: ["--profile", "black", "--filter-files"]
   - repo: https://github.com/Lucas-C/pre-commit-hooks-safety
     rev: v1.2.4
     hooks:
