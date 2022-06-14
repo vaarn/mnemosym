@@ -26,17 +26,17 @@ copy .example_env to .env and modify the file to include the OAuth token from th
 # Make sure you're using the latest version of the data files.
 python scripts/get_tables.py
 # Run bot
-python -m mnemossym.bot
+python -m mnemosym.bot
 ```
 
 # Docker Container
 A Dockerfile has been provided to automate the above build and execution processes.
 
 ## Build the docker image
-`docker build -t mnemossym .`
+`docker build -t mnemosym .`
 
 ## Run the container
-`docker run -d mnemossym`
+`docker run -d mnemosym`
 
 # Aknowledgements
 
