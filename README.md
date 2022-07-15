@@ -38,7 +38,7 @@ A Dockerfile has been provided to automate the above build and execution process
 `docker build -t mnemosym .`
 
 ## Run the container
-`docker run --env-file .env --name mnemosym -d mnemosym`
+`docker run --env-file .env -d mnemosym`
 
 # Acknowledgements
 
