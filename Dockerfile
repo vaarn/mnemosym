@@ -1,7 +1,7 @@
-FROM continuumio/miniconda3
-WORKDIR /
+FROM python:3.9-slim-buster
+RUN apt-get update && apt-get install -y gcc
 COPY . .
-RUN conda env create -f environment.yml
-SHELL ["conda", "run", "-n", "mnemosym", "/bin/bash", "-c"]
-RUN python scripts/get_tables.py
-ENTRYPOINT ["conda", "run", "--no-capture-output", "-n", "mnemosym", "python", "-m", "mnemosym.bot"]
+WORKDIR /
+RUN pip install -r requirements.txt --disable-pip-version-check
+RUN python3 scripts/get_tables.py
+CMD [ "python3", "-m", "mnemosym.bot" ]
