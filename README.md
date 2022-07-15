@@ -1,28 +1,17 @@
 # MNEMOSYM
 A discord bot for Vaults of Vaarn
 
-# Anaconda Development
+# Development
 Requirements:
-- conda
-
-```bash
-# Build environment
-conda env create -f environment.yml
-# activate environment
-conda activate mnemosym
-# Install git hook scripts
-pre-commit install
-```
-
-# Python Development
-Requirements:
-- Python 3
+- Python >= 3.9
 - pip
 
 ```bash
+# Create and activate a virtual environment
 python3 -m venv venv
 source venv/bin/activate
 
+# Install the dependencies
 (venv)$ pip install -r requirements-dev.txt
 ```
 
