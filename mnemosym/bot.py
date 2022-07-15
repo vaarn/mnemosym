@@ -7,6 +7,10 @@ from typing import Optional
 
 from discord.ext import commands
 
+import logging
+
+logging.basicConfig(level=logging.INFO)
+
 from mnemosym.config import TOKEN
 from mnemosym.generators import (
     generate_ancestry_features,
