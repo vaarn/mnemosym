@@ -1,4 +1,4 @@
 # .example_env
-# create a .env file with your configuration. N.B. this will eventually be replaced.
+# create a .env file with your configuration.
 DISCORD_TOKEN={your-bot-token}
 DATA_DIR=data

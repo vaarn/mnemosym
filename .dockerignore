@@ -1,2 +1,14 @@
+# project files
 .git
 .gitignore
+.pre-commit-config.yaml
+requirements-dev.txt
+
+# environment variables
+.env
+.example.env
+
+# Python files
+__pycache__
+*.py[cod]
+env
