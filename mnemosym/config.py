@@ -11,3 +11,4 @@ from dotenv import load_dotenv
 load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
 DATA_DIR = Path(os.getenv("DATA_DIR"))
+TEMPLATE_DIR = Path(os.getenv("TEMPLATE_DIR"))

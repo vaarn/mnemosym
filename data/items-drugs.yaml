@@ -1,0 +1,88 @@
+---
+# table: Drugs of Vaarn
+# author: Leo Hunt
+# license: CC BY-SA 4.0
+colour:
+  1: Red
+  2: Blue
+  3: Yellow
+  4: White
+  5: Black
+  6: Pink
+  7: Orange
+  8: Viridian
+  9: Olive
+  10: Silver
+  11: Gold
+  12: Bronze
+  13: Umber
+  14: Steel
+  15: Smoke
+  16: Indigo
+  17: Azure
+  18: Violet
+  19: Octarine
+  20: Ulfire
+form:
+  1: Sugar
+  2: Leaf
+  3: Crystal
+  4: Cactus
+  5: Fungus
+  6: Brain
+  7: Pearl
+  8: Slime
+  9: Meat
+  10: Honey
+  11: Insect
+  12: Liquid
+  13: Stone
+  14: Glyph
+  15: Biotech
+  16: Sand
+  17: Root
+  18: Blood
+  19: Clay
+  20: Tooth
+ingested_by:
+  1: Snorting
+  2: Injected
+  3: Stewed
+  4: Boiled in Tea
+  5: Swallow Whole
+  6: Lick It
+  7: Brain Interface
+  8: Hold on Tongue
+  9: Smoke It
+  10: Touch to Eyes
+  11: Absorbed in Skin
+  12: Stare at It
+  13: Burn and Watch the Flames
+  14: Infused into Honey
+  15: Drunk in Urine
+  16: Burn and Eat the Ash
+  17: Bake in Bread
+  18: Place in Ear
+  19: Only Affects Synths
+  20: Smell It
+effect:
+  1: Euphoria
+  2: Paranoia
+  3: Auditory Hallucinations
+  4: Visual Hallucinations
+  5: No Pain
+  6: Fearless
+  7: Ego Death
+  8: Levitation
+  9: Anxious sweats
+  10: Itchy Eyeballs
+  11: Nasal Drip
+  12: Split Personality
+  13: Nausea
+  14: Behold Azathoth
+  15: Supernatural Hearing
+  16: Paralyzed
+  17: Murderous Rage
+  18: Can't Stop Dancing
+  19: Very Mellow
+  20: Hightened Empathy

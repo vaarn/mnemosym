@@ -3,13 +3,11 @@ mnemosym.bot
 ~~~~~~~~~~~~
 Discord event handling
 """
+import logging
+
 from typing import Optional
 
 from discord.ext import commands
-
-import logging
-
-logging.basicConfig(level=logging.INFO)
 
 from mnemosym.config import TOKEN
 from mnemosym.generators import (
@@ -25,8 +23,14 @@ from mnemosym.generators import (
     generate_weapon,
     list_ancestry,
 )
+from mnemosym.items import (
+    generate_book,
+    generate_drug,
+)
 
+# discord.py configuration
 bot = commands.Bot(command_prefix="!")
+logging.basicConfig(level=logging.INFO)
 
 
 @bot.event
@@ -103,5 +107,14 @@ async def build_exotica(ctx):
     """builds exotica"""
     await ctx.send(generate_exotica())
 
+@bot.command(name="book", help="Generates books.")
+async def build_book(ctx):
+    """builds book"""
+    await ctx.send(generate_book())
+
+@bot.command(name="drug", help="Generates drugs.")
+async def build_drug(ctx):
+    """builds drugs"""
+    await ctx.send(generate_drug())
 
 bot.run(TOKEN)
