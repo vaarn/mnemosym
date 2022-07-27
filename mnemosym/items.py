@@ -6,7 +6,7 @@ import os
 import dice
 import yaml
 from jinja2 import Environment, FileSystemLoader
-from config import DATA_DIR
+from mnemosym.config import DATA_DIR
 
 # Configure jinja2
 file_loader = FileSystemLoader('templates')
@@ -64,7 +64,3 @@ def generate_drug():
     template = env.get_template('drug.j2')
     return template.render(drug)
 
-
-if __name__ == '__main__':
-    print(generate_book())
-    print(generate_drug())
