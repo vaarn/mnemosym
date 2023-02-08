@@ -1,0 +1,109 @@
+---
+# table: Books of Vaarn
+# author: Leo Hunt
+# license: CC BY-SA 4.0
+cover:
+  1: Waterlogged
+  2: Burned
+  3: Green
+  4: Golden
+  5: Snake Skin
+  6: Yellow
+  7: Orange
+  8: Mouldy
+  9: Plastic
+  10: Iridescent
+  11: Rusted
+  12: Striped
+  13: Silver
+  14: Ochre
+  15: White
+  16: Blue
+  17: Black
+  18: Sunbleached
+  19: Jewelled
+  20: Indigo
+author:
+  1: Anonymous
+  2: Armiger
+  3: Autarch
+  4: Bad Artist
+  5: Bad Poet
+  6: Cacogen
+  7: Condemned Criminal
+  8: Courtesan
+  9: Deposed Autarch
+  10: Deposed Hegemon
+  11: Great Artist
+  12: Great Poet
+  13: Hegemon
+  14: Madman
+  15: Monk
+  16: Priest
+  17: Prophet
+  18: Synth
+  19: Titan
+  20: Warrior
+style:
+  1: Insane
+  2: Wry
+  3: Sardonic
+  4: Formal
+  5: Moralising
+  6: Pious
+  7: Purple
+  8: Archaic
+  9: Heroic
+  10: Passionate
+  11: Earnest
+  12: Rhyming
+  13: Comedic
+  14: Lyrical
+  15: Monotonous
+  16: Lively
+  17: Dry
+  18: Hysterical
+  19: Awkward
+  20: Pedantic
+subject:
+  1: Medicine
+  2: Bestiary
+  3: Botany
+  4: Synthetic Life
+  5: Xenobiology
+  6: War
+  7: Geology
+  8: Biography
+  9: The Future
+  10: History
+  11: Dreams
+  12: Drugs
+  13: Travel
+  14: Art
+  15: Poetry
+  16: The Autarchs
+  17: Religion
+  18: Hypergeometry
+  19: Physics
+  20: Sex
+feature:
+  1: Extremely Heavy
+  2: Every Word Is A Lie
+  3: Bloodstains
+  4: Elaborate Illustrations
+  5: Poisoned Bookmark
+  6: From An Autarch's Library
+  7: Coded Message Inside Cover
+  8: Love Letter Inside Cover
+  9: From Another Planet
+  10: Luminous Ink
+  11: Poisoned Page
+  12: Tiny Weapon Hidden Inside
+  13: Unknown Language
+  14: Fabulously Rare
+  15: Illuminated With Gold Leaf
+  16: Heretical Text
+  17: Worm-eaten
+  18: Clever Forgery
+  19: Drugs Hidden Inside
+  20: Utterly Illegible

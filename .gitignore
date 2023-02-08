@@ -134,3 +134,6 @@ dmypy.json
 # data
 data/*.json
 !data/files.json
+
+# Visual Studio Code settings
+.vscode
