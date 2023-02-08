@@ -125,7 +125,7 @@ def generate_random_character():
     """generates a random character."""
     return (
         f"{generate_stat_block()}\n"
-        + f"{generate_hp()} (Don't forget to add your constitution bonus)\n"
+        + f"{generate_hp()}\n"
         + "\n"
         + f"{generate_ancestry_features(short=True)}\n"
         + "\n"
